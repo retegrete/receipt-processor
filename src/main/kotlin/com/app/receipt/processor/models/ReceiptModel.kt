@@ -9,6 +9,7 @@ import jakarta.persistence.Id
 
 @Entity
 data class ReceiptModel(
+        /* The code snippet is defining a data class called `ReceiptModel` which represents a receipt. */
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long = 0,
         var retailer: String,

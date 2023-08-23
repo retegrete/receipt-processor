@@ -8,6 +8,12 @@ import org.springframework.stereotype.Service
 @Service
 class TemporaryDataService(private val receiptDataRepository: ReceiptDataRepository) {
 
+    /**
+     * The function saves temporary data and returns the ID of the saved data.
+     *
+     * @param data The "data" parameter is of type ReceiptModel, which represents the data of a receipt.
+     * @return The function `returnId` is returning a `ResponseModel` object.
+     */
     fun saveTemporaryData(data: ReceiptModel): ReceiptModel{
         receiptDataRepository.save(data)
         return data

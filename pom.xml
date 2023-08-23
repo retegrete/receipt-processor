@@ -12,7 +12,7 @@
 	<artifactId>Receipt-Processor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Receipt-Processor</name>
-	<description>Receipt  Processor Application</description>
+	<description>ReceiptProcessorApplication</description>
 	<properties>
 		<java.version>17</java.version>
 		<kotlin.version>1.8.22</kotlin.version>
@@ -63,6 +63,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<mainClass>com.app.receipt.processor.ReceiptProcessorApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
