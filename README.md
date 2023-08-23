@@ -25,8 +25,8 @@ mvn spring-boot:run
 ```
 Additionally, you can use Docker with the following Docker commands assuming you have docker installed.
 ```
-docker pull retegrete/receipt-processor:retegrete
-docker run -d -p 8080:8080 --name receipt-processor retegrete/receipt-processor:retegrete
+docker pull retegrete/receipt-processor:1.0.2
+docker run -d -p 8080:8080 --name receipt-processor retegrete/receipt-processor:1.0.2
 ```
 
 ## About
