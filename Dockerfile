@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine-jdk
+FROM amazoncorretto:18-alpine-jdk
 
 RUN apk add --no-cache maven
 

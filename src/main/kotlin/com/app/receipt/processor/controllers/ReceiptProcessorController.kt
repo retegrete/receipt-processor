@@ -31,7 +31,7 @@ class ReceiptProcessorController(private val receiptService: TemporaryDataServic
 
         return try {
             receiptService.saveTemporaryData(receipt)
-            ResponseEntity.ok(receiptService.returnId((receipt)))
+            ResponseEntity.status(HttpStatus.CREATED).body(receiptService.returnId((receipt)))
         } catch (e: Exception) {
             /* `e.printStackTrace()` is a method that prints the stack trace of the exception that occurred. It is used for
             debugging purposes to see the details of the exception. */

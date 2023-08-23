@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
-import java.time.format.DateTimeParseException
 import java.util.*
 import kotlin.math.ceil
 
@@ -23,8 +22,8 @@ class CalculatePointsService(private val receiptDataRepository: ReceiptDataRepos
     fun findRegistry(id: Long): Optional<ReceiptModel> {
         return receiptDataRepository.findById(id)
     }
+    /* The code snippet is calculating the points for a given receipt. */
     fun calculate(data: Optional<ReceiptModel>): String {
-        /* The code snippet is calculating the points for a given receipt. */
         var points = 0
         val parsedDate = LocalDate.parse(data.get().purchaseDate)
         val dayOfMonth = parsedDate.dayOfMonth
