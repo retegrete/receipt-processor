@@ -1,5 +1,5 @@
 # Receipt-Processor
-Stores receipt information for later evualation.
+Stores receipt information for later evaluation.
 
 ##Requirements
 
@@ -7,7 +7,8 @@ For building and running the application you need:
 
 - [Maven 3](https://maven.apache.org)
 - [JDK 18](https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html)
-##**Clone the application**
+
+##Clone the application
 ```bash
 https://github.com/retegrete/receipt-processor.git
 ```
